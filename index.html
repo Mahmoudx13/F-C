@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="java.js"></script>
+    <title>Temperature Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 300px;
+      }
+      input,
+      button {
+        padding: 10px;
+        width: 80%;
+        margin: 10px 0;
+      }
+      select {
+        padding: 10px;
+        width: 84%;
+        margin: 10px 0;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .result {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <input type="number" id="tempInput" placeholder="Enter temperature" />
+      <select id="unitSelect">
+        <option value="CtoF">Celsius to Fahrenheit</option>
+        <option value="FtoC">Fahrenheit to Celsius</option>
+      </select>
+      <button onclick="convertTemperature()">Convert</button>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
